@@ -1,6 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
 
 export default function App() {
   return (
@@ -8,10 +9,11 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
 
-        <main>
-          <div className="min-h-screen flex flex-col">
-            Agile RiseUp — Desafio 1 - Santo Graal
-          </div>
+        <main className="min-h-[60vh] flex flex-col">
+          <Routes>
+            <Route path='/home' element={<Home />} />
+            <Route path='*' element={<Home />} />
+          </Routes>
         </main>
 
         <Footer />
