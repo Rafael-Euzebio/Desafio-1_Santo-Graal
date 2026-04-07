@@ -13,7 +13,7 @@ export default function Home() {
                 </div>
 
 
-                <main className="bg-gray-900 p-6 rounded-xl order-1 md:col-span-2 lg:col-span-1 ">
+                <main className="bg-gray-900 p-6 rounded-xl order-1 md:col-span-2 lg:col-span-1 lg:h-screen">
                     <h1 className="text-2xl font-bold mb-4">Lorem Ipsum</h1>
 
                     <p className="text-gray-400 leading-relaxed">
