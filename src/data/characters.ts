@@ -1,4 +1,4 @@
-import satoruGojoPerfil from '../../images/characters/satoru-gojo.png'
+import satoruGojoPerfil from '../images/characters/satoru-gojo.png'
 
 export type Character = {
     id: number;
