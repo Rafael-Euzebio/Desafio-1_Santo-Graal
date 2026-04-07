@@ -5,25 +5,23 @@ import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
       <div className="min-h-screen flex flex-col">
-      <header>
-        <Navbar />
-      </header>
 
-        <main className="min-h-screen flex-col">
+        <header>
+          <Navbar />
+        </header>
+
+        <main className="bg-black min-h-screen flex-1 flex flex-col">
           <Routes>
-            <Route path='/home' element={<Home />} />
-            <Route path='*' element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
 
-      <footer>
         <Footer />
-      </footer>
+
       </div>
-      </BrowserRouter>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
