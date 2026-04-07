@@ -1,23 +1,27 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
 
-        <main className="min-h-[60vh] flex flex-col">
+        <header>
+          <Navbar />
+        </header>
+
+        <main className="bg-black min-h-screen flex-1 flex flex-col">
           <Routes>
-            <Route path='/home' element={<Home />} />
-            <Route path='*' element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
 
         <Footer />
-      </BrowserRouter>
-    </>
-  )
+
+      </div>
+    </BrowserRouter>
+  );
 }
