@@ -11,7 +11,7 @@ export const CardInfo = ({ image, altImage, cardContent, cardTitle }: CardInfoPr
             <img
                 src={image}
                 alt={altImage}
-                className="h-16 w-16 rounded-lg object-cover"
+                className="h-24 w-24 rounded-lg object-cover"
             />
 
             <div>

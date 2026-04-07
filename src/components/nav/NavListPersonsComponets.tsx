@@ -5,17 +5,22 @@ import type { Character } from "../../data/characters";
 type NavListProps = {
     characters: Character[];
     selectedCharacterId: number;
+    exibeTitle?: boolean;
     onSelectCharacter: (id: number) => void;
 };
 
 export function NavListPersons({
     characters,
     selectedCharacterId,
+    exibeTitle = true,
     onSelectCharacter,
 }: NavListProps) {
     return (
-        <nav className="bg-zinc-950 p-4 rounded-lg border border-zinc-800">
-            <h2 className="text-white text-lg font-bold mb-4">Personagens</h2>
+        <nav className="bg-zinc-950 p-4 rounded-lg border h-full  border-zinc-800">
+            {exibeTitle && (
+                <h2 className="text-white text-lg font-bold mb-4">Personagens</h2>
+
+            )}
 
             <ul className="flex flex-col gap-3">
                 {characters.map((character) => {
