@@ -17,6 +17,7 @@ export const CharacterSelectedBiograph = ({ character }: CharacterSelectedBiogra
             <SkilsData title="Estilo de luta" discription={character.fightingStyle} />
             <SkilsData title="Técnicas amaldiçoadas" discription={character.cursedTechniques} />
             <SkilsData title="Classificação de força" discription={character.forceClassification} />
+
         </div>
     )
 }

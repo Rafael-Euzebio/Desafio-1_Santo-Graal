@@ -3,7 +3,7 @@ import { ExplicativeSeason } from "./ExplicativeSeason";
 
 export function MainContent() {
     return (
-        <section className="grid grid-cols-1 gap-4">
+        <section className="grid h-full grid-cols-1 gap-4">
             <ExplicativeSeason />
             <MoreInfoAditional />
         </section>
