@@ -7,7 +7,9 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
+      <header>
         <Navbar />
+      </header>
 
         <main className="min-h-[60vh] flex flex-col">
           <Routes>
@@ -16,7 +18,10 @@ export default function App() {
           </Routes>
         </main>
 
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
+        
       </BrowserRouter>
     </>
   )
