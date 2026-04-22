@@ -42,25 +42,21 @@ export default function App() {
             grid h-full min-h-0 gap-4
             grid-cols-1
             md:grid-cols-1
-            lg:grid-cols-1
+            lg:grid-cols-[260px_minmax(0,1fr)_320px]
             xl:grid-cols-[260px_minmax(0,1fr)_320px]
           "
         >
-          <div className="hidden xl:block h-full" >
+          <div className="hidden lg:block h-full" >
             <NavListPersons
               characters={characters}
               selectedCharacterId={characterSelectedId}
               onSelectCharacter={handleSelectCharacter}
             />
           </div>
+          <MainContent />
 
-          <div className="">
-            <MainContent />
-          </div>
+          <CharacterDetails character={selected} />
 
-          <div className="">
-            <CharacterDetails character={selected} />
-          </div>
         </div>
       </main>
 

@@ -1,6 +1,6 @@
 export const ExplicativeSeason = () => {
     return (
-        <main className="rounded-tl-2xl rounded-tr-2xl border border-zinc-700/60  bg-center p-6  shadow-lg">
+        <article className="rounded-tl-2xl rounded-tr-2xl border border-zinc-700/60  bg-center p-6  shadow-lg">
             <h1 className="mb-4 border-b border-zinc-400/30 pb-3 text-4xl font-bold">
                 O Jogo do Abate
             </h1>
@@ -26,6 +26,6 @@ export const ExplicativeSeason = () => {
                     é um dos momentos mais tensos, estratégicos e brutais de toda a obra.
                 </p>
             </div>
-        </main>
+        </article>
     )
 }
