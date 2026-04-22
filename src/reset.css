@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -16,9 +18,8 @@
 }
 
 body {
-  /* 4. Add accessible line-height */
+    
   line-height: 1.5;
-  /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
 
